@@ -1,8 +1,10 @@
-const productRouter = require('./productsRouter')
+const courseRouter = require('./coursesRouter')
 
 
 function routers(app){
-    app.use('/',productRouter)
+    app.use('/',courseRouter)
+    app.use('/learning-paths',courseRouter)
+
     
 
 }
