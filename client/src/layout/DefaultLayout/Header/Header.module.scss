@@ -1,0 +1,88 @@
+.Header_wrapper {
+  --height: 66px;
+  border-bottom: 1px solid #e8ebed;
+  align-items: center;
+  display: flex;
+  font-size: 1.4rem;
+  height: var(--height);
+  background-color: #fff;
+  left: 0;
+  padding: 0 28px;
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  top: 0;
+  z-index: 9999;
+}
+.Header_logo {
+  align-items: center;
+  display: flex;
+}
+
+.Header_logo a {
+  display: flex;
+}
+.Header_logo img {
+  border-radius: 8px;
+  flex-shrink: 0;
+  height: 38px;
+  object-fit: contain;
+  width: 38px;
+}
+.Header_heading {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-left: 16px;
+}
+.Header_search{
+  flex: 1 1;
+
+}
+.Header_actions {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Header_login-btn {
+  background-color: var(--primary-color);
+  border-radius: 999px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 9px 20px;
+  display: none;
+}
+.Header_myLearn {
+  background-color: transparent;
+  color: #333;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-right: 16px;
+  padding: 8px;
+}
+.Header_actionBtn {
+  padding: 8px;
+  position: relative;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.Header_action-icon {
+  color: #707070;
+  font-size: 2rem;
+}
+.Header_avatar-wrapper {
+  margin-left: 12px;
+}
+
+.Header_avatar {
+  border-radius: 50%;
+  height: 9em;
+  object-fit: cover;
+  width: 9em;
+  cursor: pointer;
+}

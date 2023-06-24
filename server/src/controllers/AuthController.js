@@ -1,7 +1,7 @@
-const homeService = require('../services/HomeService')
+const authService = require('../services/AuthService')
 class HomeController{
    async getAll(req,res){
-        const response = await homeService.getAll()
+        const response = await authService.getAll()
         res.json(response)
        
 

@@ -1,9 +1,9 @@
-const homeController = require('../controllers/HomeController')
+const authController = require('../controllers/AuthController')
 
 
 const express = require('express');
-const homeRouter = express.Router();
-homeRouter.get('/',homeController.getAll)
+const authRouter = express.Router();
+authRouter.get('/',authController.getAll)
 
 
 
@@ -11,4 +11,4 @@ homeRouter.get('/',homeController.getAll)
 
 
 
-module.exports =  homeRouter
+module.exports =  authRouter

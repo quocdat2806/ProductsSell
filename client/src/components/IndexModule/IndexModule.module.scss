@@ -1,0 +1,33 @@
+.index-module-gird{
+    width: 100%;
+    max-width: 1920px;
+    padding: 0;
+    margin: 0 auto;
+
+}
+.index-module-row{
+    margin-left: -12px;
+    margin-right: -12px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+.index-module-col{
+    padding: 0 12px;
+    width: 25%;
+    display: block;
+ 
+}
+
+.index-module-wide{
+    width: 100%;
+    max-width: 1224px;
+    margin: 0 auto;
+}
+.index-module-col-small{
+    width: 16.66667%;
+}
+.index-module-col-full-width{
+    width: 100%;
+}
