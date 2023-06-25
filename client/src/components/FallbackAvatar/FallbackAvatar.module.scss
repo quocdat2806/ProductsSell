@@ -1,6 +1,12 @@
 .FallbackAvatar_avatar{
-    --font-size: 3.2px;
+   
     background: transparent;
     border-radius: 50%;
-    font-size: var(--font-size);
+    font-size: 3.2px;
+    img{
+        border-radius: 50%;
+        height: 9em;
+        object-fit: cover;
+        width: 9em;
+    }
 }

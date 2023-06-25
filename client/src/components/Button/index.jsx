@@ -4,10 +4,12 @@ const cx = classNames.bind(styles);
 
 import React from 'react'
 
-const Button = ({className}) => {
+const Button = ({className,isPrimary,title}) => {
   return (
-    <button className={cx('Button_btn',` ${className}`)}>
-        Xem khóa học
+    <button className={cx('Button_btn',` ${className}`,{
+      'Button_primary': isPrimary
+    })}>
+        {title}
     </button>
   )
 }

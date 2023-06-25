@@ -32,7 +32,7 @@ export const AddIcon = ({ className }) => (
     ></path>
   </svg>
 );
-export const WaysIcon = ({ className }) => (
+export const LearningPathIcon = ({ className }) => (
   <svg
     className={className}
     aria-hidden="true"
@@ -49,7 +49,7 @@ export const WaysIcon = ({ className }) => (
     ></path>
   </svg>
 );
-export const LearnIcon = ({ className }) => (
+export const CourseIcon = ({ className }) => (
   <svg
     className={className}
     aria-hidden="true"
@@ -153,7 +153,7 @@ export const FacebookIcon = ({ className }) => {
       focusable="false"
       data-prefix="fab"
       data-icon="facebook-square"
-      class={className}
+      className={className}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -180,6 +180,46 @@ export const TikTokIcon = ({ className }) => {
       <path
         fill="currentColor"
         d="M448 209.9a210.1 210.1 0 0 1 -122.8-39.25V349.4A162.6 162.6 0 1 1 185 188.3V278.2a74.62 74.62 0 1 0 52.23 71.18V0l88 0a121.2 121.2 0 0 0 1.86 22.17h0A122.2 122.2 0 0 0 381 102.4a121.4 121.4 0 0 0 67 20.14z"
+      ></path>
+    </svg>
+  );
+};
+
+export const BookmarkIcon = ({ className }) => {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      data-prefix="far"
+      data-icon="bookmark"
+      className={className}
+      role="img"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 384 512"
+    >
+      <path
+        fill="currentColor"
+        d="M336 0h-288C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93C357.2 519.1 384 504.6 384 479.9V48C384 21.49 362.5 0 336 0zM336 452L192 368l-144 84V54C48 50.63 50.63 48 53.1 48h276C333.4 48 336 50.63 336 54V452z"
+      ></path>
+    </svg>
+  );
+};
+
+export const EllipseIcon = ({className}) => {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      data-prefix="fas"
+      data-icon="ellipsis"
+      className={className}
+      role="img"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+    >
+      <path
+        fill="currentColor"
+        d="M120 256C120 286.9 94.93 312 64 312C33.07 312 8 286.9 8 256C8 225.1 33.07 200 64 200C94.93 200 120 225.1 120 256zM280 256C280 286.9 254.9 312 224 312C193.1 312 168 286.9 168 256C168 225.1 193.1 200 224 200C254.9 200 280 225.1 280 256zM328 256C328 225.1 353.1 200 384 200C414.9 200 440 225.1 440 256C440 286.9 414.9 312 384 312C353.1 312 328 286.9 328 256z"
       ></path>
     </svg>
   );

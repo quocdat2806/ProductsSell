@@ -9,7 +9,7 @@ const CommonItem = ({className}) => {
   return (
     <div className={cx('CommonItem_wrapper',`${className}`)}>
         <Link className={cx('CommonItem_link')}>
-            <Button className={cx('CommonItem_cta-btn__OK')}/>
+            <Button title={"Xem khóa học"} className={cx('CommonItem_cta-btn__OK')}/>
             <img src="https://files.fullstack.edu.vn/f8-prod/courses/15/62f13d2424a47.png" className={cx('CommonItem_thumb')} alt="" />
 
         </Link>

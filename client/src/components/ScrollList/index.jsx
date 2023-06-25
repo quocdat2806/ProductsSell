@@ -8,7 +8,7 @@ const ScrollList = ({className}) => {
   const ModuleRow = IndexModule['index-module-row']
   const ModuleCol = IndexModule['index-module-col']
   return (
-    <div className={cx('ScrollList_vertical')}>
+    <div className={cx('ScrollList_vertical',`${className}`)}>
       <div>
         <div className={cx('ScrollList_heading-wrap')}>
           <h2 className={cx('ScrollList_heading')}>

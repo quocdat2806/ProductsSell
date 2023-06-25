@@ -1,0 +1,12 @@
+$font-size: 1.5rem;
+$line-height: 1.6;
+
+.MarkdownParser_wrapper{
+    word-wrap: break-word;
+    color: #292929;
+    font-size: $font-size;
+    line-height: $line-height;
+    p{
+        margin: 6px 0;
+    }
+}

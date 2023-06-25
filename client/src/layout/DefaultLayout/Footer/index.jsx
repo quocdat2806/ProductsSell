@@ -1,4 +1,3 @@
-import React from "react";
 import classNames from "classNames/bind";
 import styles from "./Footer.module.scss";
 import IndexModule from "../../../components/IndexModule";
@@ -53,7 +52,7 @@ const Footer = () => {
                 </div>
               </div>
             </ModuleCol>
-            <ModuleCol isSmallCol>
+            <ModuleCol col_16>
             <div className={cx("Footer_column")}>
                 <div>
                    
@@ -87,7 +86,7 @@ const Footer = () => {
               </div>
 
             </ModuleCol>
-            <ModuleCol isSmallCol>
+            <ModuleCol col_16>
             <div className={cx("Footer_column")}>
                 <div>
                    
@@ -121,7 +120,7 @@ const Footer = () => {
               </div>
 
             </ModuleCol>
-            <ModuleCol isSmallCol>
+            <ModuleCol col_16>
             <div className={cx("Footer_column")}>
                 <div>
                    
@@ -186,7 +185,7 @@ const Footer = () => {
             </ModuleCol>
           </ModuleRow>
           <ModuleRow>
-            <ModuleCol isFullWidth>
+            <ModuleCol col_100>
               <div className={cx('Footer_bottom')}>
               <p className={cx('Footer_copyright')}>© 2018 - 2023 F8. Nền tảng học lập trình hàng đầu Việt Nam</p>
               <div className={cx('Footer_social-list')}>

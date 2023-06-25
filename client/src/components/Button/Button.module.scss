@@ -1,11 +1,9 @@
 .Button_btn{
     -webkit-appearance: none;
     appearance: none;
-    background-color: var(--white-color);
-    border: 1px solid var(--primary-color);
+    background-color: white;
     border-radius: 999px!important;
-    color: var(--primary-color);
-    display: inline-block;
+    display: block;
     font-size: 1.4rem;
     font-weight: 600;
     outline: none;
@@ -16,4 +14,19 @@
     -ms-user-select: none;
     user-select: none;
     white-space: nowrap;
+    animation: upto alternate .3s ease;
 }
+.Button_btn.Button_primary{
+    background-color: #f05123;
+    color: white;
+}
+
+@keyframes upto{
+    0%{
+      top: 60%;
+    }
+    100%{
+      top: 50%;
+    }
+  }
+  

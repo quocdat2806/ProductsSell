@@ -1,4 +1,3 @@
-import React from 'react'
 import classNames from "classNames/bind";
 import styles from "./IndexModule.module.scss";
 const cx = classNames.bind(styles);
@@ -23,11 +22,14 @@ class IndexModule {
         )
 
     }
-    'index-module-col'({children,isSmallCol,isFullWidth}){
+    'index-module-col'({children,col_16,col_66,col_33,col_100}){
         return (
             <section className={cx('index-module-col',{
-                'index-module-col-small':isSmallCol,
-                'index-module-col-full-width':isFullWidth
+                'index-module-col-small-16':col_16,
+                'index-module-col-full-width':col_100,
+                'index-module-col-large-66':col_66,
+                'index-module-col-large-33':col_33,
+
             })}>
 
                {children}

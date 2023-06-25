@@ -1,6 +1,6 @@
 import Home from "../pages/Home"
 import Blog from "../pages/Blog"
-import LearnPath from "../pages/LearnPath"
+import LearningPath from "../pages/LearningPath"
 import Courses from "../pages/Courses"
 
 
@@ -12,7 +12,7 @@ const publicRouters = [
     },
     {
         path:'/learning-path',
-        component:LearnPath
+        component:LearningPath
     },
      {
         path:'/blog',

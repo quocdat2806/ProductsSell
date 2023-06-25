@@ -1,0 +1,66 @@
+.LearningPath_list-content {
+  display: flex;
+  margin-top: 24px;
+}
+.LearningPath_item-wrapper {
+  border: 2px solid #e8e8e8;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  width: 500px;
+}
+.LearningPath_item-wrapper + .LearningPath_item-wrapper{
+margin-left: 24px;
+}
+.LearningPath_item-body {
+  display: flex;
+  margin-bottom: 20px;
+}
+.LearningPath_item-infor {
+  flex: 1 1;
+  p {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+}
+.LearningPath_item-title {
+  margin: 0;
+  a{
+    color: #242424;
+    display: block;
+    font-size: 2rem;
+    font-weight: 900;
+    padding-bottom: 14px;
+  }
+}
+
+.LearingPath_item_thumb-wrap {
+  align-items: center;
+  display: flex;
+  padding-left: 24px;
+}
+.LearningPath_item_thumb-round{
+    align-items: center;
+    border: 5px solid var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    height: 122px;
+    justify-content: center;
+    overflow: hidden;
+    width: 122px;
+}
+.LearningPath_item-thumb{
+    border-radius: 50%;
+    height: 98px;
+    object-fit: cover;
+    width: 98px;
+}
+.LearningPath_item-cta{
+    display: flex;
+    margin: auto 0 28px;
+}
+// .LearningPath_item_view-detail{
+//     width: 100%;
+// }

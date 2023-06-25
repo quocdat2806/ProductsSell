@@ -2,8 +2,9 @@
     flex-shrink: 0;
     margin-bottom: 32px;
     overflow: hidden;
-
+    
 }
+
 .CommonItem_link{
     border-radius: 16px;
     display: block;
@@ -12,6 +13,16 @@
     padding-top: 56.25%;
     position: relative;
     width: 100%;
+    &:hover .CommonItem_cta-btn__OK{
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        animation: upto alternate .5s ease-in-out;
+    }
+    &:hover{
+        opacity: 0.8;
+    }
+   
 }
 .CommonItem_cta-btn__OK{
     background-color: #fff;
@@ -20,14 +31,19 @@
     left: 50%;
     opacity: 0;
     position: absolute;
-    top: 60%;
-    -webkit-transform: translate(-50%,-50%);
+    top: 50%;
     transform: translate(-50%,-50%);
-    transition: all .3s ease 0s;
     visibility: hidden;
     z-index: 1;
 }
-
+@keyframes upto{
+    0%{
+      top: 60%;
+    }
+    100%{
+      top: 50%;
+    }
+  }
 .CommonItem_thumb{
     height: 100%;
     left: 0;

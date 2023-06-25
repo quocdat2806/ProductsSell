@@ -1,0 +1,45 @@
+
+.CircularProgressBar_pie-wrapper{
+    height:40px;
+    position: relative;
+    width: 40px;
+}
+.CircularProgressBar_pie-wrapper:nth-child(3n+1) {
+    clear: both;
+}
+.CircularProgressBar_pie{
+    clip: rect(0,40px,40px,20px);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.CircularProgressBar_left-side{
+    transform: rotate(calc(27 * 3.6deg));
+    transition: .3s ease;
+}
+.CircularProgressBar_half-circle{
+    clip: rect(0,20px,40px,0);
+    border: 2px solid #ccc #f05123;
+    border-radius: 50%;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.CircularProgressBar_shadow{
+    border: 2px solid #d4d4d4;
+    border-radius: 50%;
+    height: 100%;
+    transition: background-color .3s ease;
+    width: 100%;
+}
+.CircularProgressBar_body{
+    bottom:2px;
+    left:2px;
+    position: absolute;
+    right:2px;
+    top:2px;
+}

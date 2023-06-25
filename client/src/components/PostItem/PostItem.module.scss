@@ -1,0 +1,68 @@
+.PostItem_wrapper{
+    border: 2px solid #e8e8e8;
+    border-radius: 16px;
+    padding: 24px;
+}
+.PostItem_header,
+.PostItem_body,
+.PostItem_author
+{
+    align-items: center;
+    display: flex;
+
+}
+.PostItem_header{
+   
+    justify-content: space-between;
+}
+.PostItem_author span{
+    color: #292929;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-left: 8px;
+
+}
+.PostItem_actions{
+    color: #757575;
+    display: flex;
+    font-size: 1.6rem;
+    margin-right: -8px;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+.PostItem_optionBtn{
+    cursor: pointer;
+    padding: 4px 8px;
+}
+.PostItem_infor{
+    font-size: 1.4rem;
+}
+.PostItem_title{
+    color: #292929;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.6;
+    margin-bottom: 0;
+    margin-top: 8px;
+}
+.PostItem_desc{
+    color: #505050;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin: 4px 0  15px 0 ;
+
+}
+.PostItem_tags{
+    background-color: #f2f2f2;
+    border-radius: 100px;
+    color: #333;
+    font-weight: 500;
+    line-height: 2rem;
+    margin-right: 12px;
+    padding: 4px 10px;
+}
+.PostItem_dot{
+    margin: 0 8px;
+}
