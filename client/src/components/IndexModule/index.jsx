@@ -4,18 +4,18 @@ const cx = classNames.bind(styles);
 
 
 class IndexModule {
-    'index-module-grid'({children}){
+    'index-module-grid'({children,styles}){
         return (
-            <section className={cx('index-module-gird')}>
+            <section style={styles} className={cx('index-module-gird')}>
 
                 {children}
             </section>
         )
 
     }
-    'index-module-row'({children}){
+    'index-module-row'({children,className}){
         return (
-            <section className={cx('index-module-row')}>
+            <section className={cx('index-module-row', `${className}`?  `${className}`:null)}>
 
                {children}
             </section>

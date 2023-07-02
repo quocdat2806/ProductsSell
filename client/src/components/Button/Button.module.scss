@@ -14,19 +14,9 @@
     -ms-user-select: none;
     user-select: none;
     white-space: nowrap;
-    animation: upto alternate .3s ease;
 }
 .Button_btn.Button_primary{
     background-color: #f05123;
     color: white;
 }
 
-@keyframes upto{
-    0%{
-      top: 60%;
-    }
-    100%{
-      top: 50%;
-    }
-  }
-  

@@ -26,6 +26,7 @@ const DefaultLayout = ({children}) => {
     <Footer/>
 
     </div>
+    <div className='Toastify'></div>
     </>
   )
 }

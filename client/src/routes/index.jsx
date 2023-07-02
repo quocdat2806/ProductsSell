@@ -2,6 +2,7 @@ import Home from "../pages/Home"
 import Blog from "../pages/Blog"
 import LearningPath from "../pages/LearningPath"
 import Courses from "../pages/Courses"
+import CourseDetail from "../components/CourseDetail"
 
 
 const publicRouters = [
@@ -18,6 +19,10 @@ const publicRouters = [
         path:'/blog',
         component:Blog
     }, 
+    {
+        path:'/courses/:slug',
+        component:CourseDetail
+    },
     {
         path:'/courses',
         component:Courses

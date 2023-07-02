@@ -15,12 +15,16 @@
    
     justify-content: space-between;
 }
-.PostItem_author span{
+.PostItem_author a{
+    color: #757575;
+    font-size: 1.4rem;
+}
+.PostItem_author .PostItem_user-name{
     color: #292929;
-    font-size: 1.2rem;
     font-weight: 600;
-    margin-left: 8px;
-
+}
+.PostItem_author svg{
+    font-size: 1.2rem;
 }
 .PostItem_actions{
     color: #757575;
@@ -64,5 +68,14 @@
     padding: 4px 10px;
 }
 .PostItem_dot{
-    margin: 0 8px;
+    margin: 0 7px;
+}
+.PostItem_avatar-wrapper{
+    margin-right: 8px;
+    -webkit-transform: scale(.8);
+    transform: scale(.8);
+}
+.PostItem_user-name{
+    color: #292929;
+    font-weight: 600;
 }

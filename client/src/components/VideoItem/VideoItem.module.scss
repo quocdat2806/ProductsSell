@@ -1,0 +1,49 @@
+
+
+.VideoItem_video-info{
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 16px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+
+}
+.VideoItem_play_wrap{
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    width: 36px;
+}
+.VideoItem_play-icon{
+    color: #333;
+    font-size: 1.3rem;
+}
+.VideoItem_duration{
+    border: 2px solid #fff;
+    border-radius: 999px;
+    color: #fff;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 7px 12px;
+
+}
+
+.VideoItem_stats{
+    color: #757575;
+    display: flex;
+    font-size: 1.4rem;
+    margin-left: -24px;
+    span{
+        margin-left: 8px;
+    }
+    div{
+        margin-left: 24px;
+    }
+}

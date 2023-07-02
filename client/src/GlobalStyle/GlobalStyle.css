@@ -146,6 +146,8 @@ section {
 }
 body {
   line-height: 1;
+  overflow-y: auto;
+  overflow-x: unset;
 }
 ol,
 ul {
@@ -299,7 +301,7 @@ button,select {
 }
 
 [type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring {
-    outline: 1px dotted ButtonText
+    outline: 1px dotted 
 }
 
 fieldset {
@@ -380,7 +382,104 @@ svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
     overflow: visible;
     vertical-align: -0.125em;
 }
+
+.userName_icon{
+    color: #1b74e4;
+    margin-left: 4px;
+}
 .slick-slide img {
-border-radius: 8px;
+    border-radius: 8px;
+    display: block;
+    
+    }
+.slick-slider .slick-list, .slick-slider .slick-track {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.slick-list {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+.slick-list, .slick-slider {
+    display: block;
+    position: relative;
+}
+.slick-dots {
+    bottom: -25px;
+    display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 
+
+body .slick-dots {
+    bottom: -38px;
+    left: 40px;
+    text-align: left;
+}
+body .slick-dots li, body .slick-dots li button {
+    width: 32px;
+}
+.slick-dots li, .slick-dots li button {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+}
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 0;
+    position: relative;
+}
+.slick-dots li button {
+    background: transparent;
+    border: 0;
+    color: transparent;
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    padding: 5px;
+}
+body .slick-dots li button:before {
+    background-color: #dce0e3;
+    border-radius: 4px;
+    content: "";
+    height: 8px;
+    margin-right: 10px;
+    opacity: 1;
+    transition: width .3s linear,background-color .3s linear;
+    width: 32px;
+}
+.slick-dots li button:before {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #000;
+    content: "•";
+    font-family: slick;
+    font-size: 6px;
+    height: 20px;
+    left: 0;
+    line-height: 20px;
+    opacity: .25;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 20px;
+}
+body .slick-dots li.slick-active, body .slick-dots li.slick-active button {
+    width: 50px;
+}
+body .slick-dots li.slick-active button:before {
+    background-color: #9aa6af;
+    width: 50px;
+}
+.slick-dots li.slick-active button:before {
+    color: #000;
+    opacity: .75;
+}

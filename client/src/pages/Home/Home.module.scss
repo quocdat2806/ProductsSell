@@ -1,15 +1,15 @@
 .Home_slideshow{
     margin-top: 18px;
 }
-.Home_slideshow-wrapper{
-    min-height: 270px;
-}
 .Home_wrapper{
     margin-top: 70px;
     overflow: hidden;
     padding: 0 44px 74px;
 }
 .Home_courseItem{
-    overflow: unset;
+    overflow: unset!important;
     position: relative;
 }
+
+
+

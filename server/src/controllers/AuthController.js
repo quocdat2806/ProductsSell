@@ -1,13 +1,11 @@
 const authService = require('../services/AuthService')
-class HomeController{
+class AuthController{
    async getAll(req,res){
         const response = await authService.getAll()
         res.json(response)
-       
-
     }
 
 
 
 }
-module.exports = new HomeController
+module.exports = new AuthController

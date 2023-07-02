@@ -1,0 +1,4 @@
+*.log
+Copy
+node_modules/
+env/

@@ -4,6 +4,7 @@ import styles from "./Sidebar.module.scss";
 import CreateButton from "../../../components/CreateButton";
 import { SidebarIcon } from "../../../fakeData";
 import NewFeed from "../../../components/NewFeed";
+import { Link } from "react-router-dom";
 const cx = classNames.bind(styles);
 
 const Sidebar = () => {
@@ -17,7 +18,8 @@ const Sidebar = () => {
             const isActive = item.isActive;
             return (
               <li key={index}>
-                <a
+                <Link
+                  to={item.path}
                   className={cx("Sidebar-itemBtn", {
                     "Sidebar-active": isActive,
                   })}
@@ -26,7 +28,7 @@ const Sidebar = () => {
                 >
                   <Icon className={"svg-inline--fa"} />
                   <span>{item.title}</span>
-                </a>
+                </Link>
               </li>
             );
           })}

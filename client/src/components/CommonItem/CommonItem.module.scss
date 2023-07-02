@@ -2,40 +2,65 @@
     flex-shrink: 0;
     margin-bottom: 32px;
     overflow: hidden;
+    .CommonItem_link{
+        border-radius: 16px;
+        display: block;
+        object-fit: cover;
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        width: 100%;
+        .CommonItem_cta-btn__OK{
+            background-color: #fff;
+            border-color: #fff;
+            color: #000;
+            left: 50%;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            visibility: hidden;
+            z-index: 1;
+        }
+        .CommonItem_thumb{
+            height: 100%;
+            left: 0;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            width: 100%;
+        }
+        
+        &:hover .CommonItem_cta-btn__OK{
+            display: block;
+            opacity: 1;
+            visibility: visible;
+            animation: upto alternate .5s ease-in-out;
+        }
+        &:hover{
+            opacity: 0.8;
+        }
+       
+    }
+    .CommonItem_title{
+        padding: 11px 0;
+        a{
+            word-wrap: break-word;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 1;
+            color: #292929;
+            display: -webkit-box;
+            font-size: 1.6rem;
+            line-height: 1.4;
+            overflow: hidden;
+
+        }
+    }
     
 }
 
-.CommonItem_link{
-    border-radius: 16px;
-    display: block;
-    object-fit: cover;
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
-    width: 100%;
-    &:hover .CommonItem_cta-btn__OK{
-        display: block;
-        opacity: 1;
-        visibility: visible;
-        animation: upto alternate .5s ease-in-out;
-    }
-    &:hover{
-        opacity: 0.8;
-    }
-   
-}
-.CommonItem_cta-btn__OK{
-    background-color: #fff;
-    border-color: #fff;
-    color: #000;
-    left: 50%;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    visibility: hidden;
-    z-index: 1;
-}
+
+
 @keyframes upto{
     0%{
       top: 60%;
@@ -44,11 +69,4 @@
       top: 50%;
     }
   }
-.CommonItem_thumb{
-    height: 100%;
-    left: 0;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    width: 100%;
-}
+

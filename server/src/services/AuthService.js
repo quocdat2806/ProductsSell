@@ -1,10 +1,6 @@
 
-
-
-
-
 class AuthService{
-     getAll(){
+     authozation(){
        
 
 

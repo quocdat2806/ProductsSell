@@ -5,14 +5,15 @@ import Search from '../../../components/Search';
 import FallbackAvatar from '../../../components/FallbackAvatar';
 import { BellIcon } from '../../../Icons';
 import { Logo,Avatar } from '../../../Images';
+import { Link } from 'react-router-dom';
 const cx = classNames.bind(styles);
 const Header = () => {
   return (
     <div className={cx("Header_wrapper")}>
       <div className={cx('Header_logo')}>
-        <a  >
+        <Link  >
           <Logo/>
-        </a>
+        </Link>
         <h4 className={cx('Header_heading')}>Học Lập Trình Để Đi Làm</h4>
       </div>
       <div className={cx('Header_search','d-flex-center')}>
@@ -21,7 +22,7 @@ const Header = () => {
         </div>
       </div>
       <div className={cx('Header_actions')}>
-        <div className={cx('login-portal')}></div>
+        <div className={cx('Header_action-portal')}></div>
         <a className={cx('Header_login-btn')} href="">Đăng nhập</a>
         <div>
           <button aria-expanded="false" className={cx('Header_myLearn')}>Khóa học của tôi</button>
