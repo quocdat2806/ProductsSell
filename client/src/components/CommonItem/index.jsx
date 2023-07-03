@@ -25,7 +25,7 @@ const CommonItem = ({
 }) => {
   return (
     <div className={cx("CommonItem_wrapper", `${className}`)}>
-      <Link className={cx("CommonItem_link")}>
+      <Link to={`/courses/${data.slug}`}Ư className={cx("CommonItem_link")}>
         <Button
           title={"Xem khóa học"}
           className={cx("CommonItem_cta-btn__OK")}

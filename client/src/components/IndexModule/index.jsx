@@ -15,7 +15,7 @@ class IndexModule {
     }
     'index-module-row'({children,className}){
         return (
-            <section className={cx('index-module-row', `${className}`?  `${className}`:null)}>
+            <section className={cx('index-module-row', `${className}`?`${className}`:null)}>
 
                {children}
             </section>

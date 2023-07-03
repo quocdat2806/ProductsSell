@@ -4,7 +4,20 @@ const cx = classNames.bind(styles);
 import IndexModule from "../IndexModule";
 import CurriculumOfCourse from "../CurriculumOfCourse";
 
+
+export function CourseDetailPurchaseBadge(){
+  return(
+    <div>
+      
+
+    </div>
+  )
+}
+
+
 const CourseDetail = () => {
+  
+
   const ModuleRow = IndexModule["index-module-row"];
   const ModuleCol = IndexModule["index-module-col"];
   const ModuleGrid = IndexModule["index-module-grid"];
@@ -23,7 +36,9 @@ const CourseDetail = () => {
             <ModuleRow/>
 
           </ModuleCol>
-          <ModuleCol col_33></ModuleCol>
+          <ModuleCol col_33>
+
+          </ModuleCol>
         </ModuleRow>
       </ModuleGrid>
     </>

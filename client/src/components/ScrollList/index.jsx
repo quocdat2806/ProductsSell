@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 /* eslint-disable react/prop-types */
 import classNames from "classNames/bind";
 import styles from "./ScrollList.module.scss";
@@ -6,8 +7,7 @@ import IndexModule from "../IndexModule";
 import CommonItem from "../CommonItem";
 import useFetch from "../../hooks/useFetch";
 const ScrollList = ({ className,hide }) => {
-  
-  const dataHome = useFetch(hide)
+   let  dataHome  = useFetch(hide)  
   const ModuleRow = IndexModule["index-module-row"];
   const ModuleCol = IndexModule["index-module-col"];
 
