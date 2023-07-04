@@ -28,7 +28,7 @@ class IndexModule {
                 'index-module-col-small-16':col_16,
                 'index-module-col-full-width':col_100,
                 'index-module-col-large-66':col_66,
-                'index-module-col-large-33':col_33,
+                'index-module-col-small-33':col_33,
 
             })}>
 

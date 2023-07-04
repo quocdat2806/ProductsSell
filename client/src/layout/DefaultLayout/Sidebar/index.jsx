@@ -1,4 +1,3 @@
-import React from "react";
 import classNames from "classNames/bind";
 import styles from "./Sidebar.module.scss";
 import CreateButton from "../../../components/CreateButton";

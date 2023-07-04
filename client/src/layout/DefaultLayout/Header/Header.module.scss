@@ -81,6 +81,67 @@
 .Header_actions {
   flex: 1 1;
 }
+.Header_back-btn{
+  cursor: pointer;
+  display: flex;
+  height: var(--wrapper-height);
+  transition: background-color .2s linear;
+  width: 60px;
+}
+.Header_logo {
+  margin-left: 8px;
+  position: relative;
+  top: 1px;
+}
+.Header_logo img {
+  height: 30px;
+}
+.Header_logo img {
+  border-radius: 8px;
+}
+.Header_course-title {
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  color: #fff;
+  display: -webkit-box;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-left: 16px;
+  overflow: hidden;
+}
+.Header_progress-bar {
+  align-items: center;
+  display: flex;
+  margin-right: 24px;
+}
+.Header_completed-msg {
+  color: var(--white-color);
+  font-size: 1.3rem;
+  margin-left: 6px;
+}
+.Header_completed-msg .Header_num {
+  font-size: 1.2rem;
+}
+
+.Header_num {
+  -webkit-font-feature-settings: "tnum";
+  font-feature-settings: "tnum";
+  font-variant-numeric: tabular-nums;
+}
+.Header_action-btn{
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-right: 24px;
+  opacity: .8;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.Header_action-btn .Header_icon {
+  margin-right: 6px;
+}
 
 
 

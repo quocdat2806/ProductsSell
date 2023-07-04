@@ -3,6 +3,7 @@ import Blog from "../pages/Blog"
 import LearningPath from "../pages/LearningPath"
 import Courses from "../pages/Courses"
 import CourseDetail from "../components/CourseDetail"
+import LessonDetail from "../components/LessonDetail"
 
 
 const publicRouters = [
@@ -20,12 +21,18 @@ const publicRouters = [
         component:Blog
     }, 
     {
+        path:'/learning/:slug',
+        component:LessonDetail,
+        layout:null
+    }, 
+    {
         path:'/courses/:slug',
         component:CourseDetail
     },
     {
         path:'/courses',
-        component:Courses
+        component:Courses,
+       
     },
 ]
 const privateRouters = [

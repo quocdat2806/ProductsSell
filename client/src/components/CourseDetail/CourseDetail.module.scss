@@ -14,3 +14,106 @@
     line-height: 1.6;
 
 }
+.CourseDetail_purchaseBadge{
+    align-items: center;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 60px;
+    margin-left: 24px;
+    padding-bottom: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 90px;
+}
+.CourseDetail_imgPreview{
+    border-radius: 16px;
+    margin: 2px 0 20px;
+    overflow: hidden;
+    position: relative;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: calc(100% - 2px);
+}
+.CourseDetail_bg {
+    background-image: url(https://files.fullstack.edu.vn/f8-prod/courses/21/63e1bcbaed1dd.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding-top: 56.25%;
+    width: 100%;
+}
+.CourseDetail_purchaseBadge p {
+    font-size: 1.4rem;
+}
+.CourseDetail_imgPreview p {
+    bottom: 0;
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 600;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    padding: 0 0 20px 0;
+
+}
+
+.CourseDetail_imgPreview:after {
+    background-image: linear-gradient(180deg,rgba(30,30,28,0),rgba(30,30,28,.9));
+    bottom: 0;
+    content: "";
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: all .3s linear;
+}
+.CourseDetail_purchaseBadge h5 {
+    color: #f05123;
+    font-size: 32px;
+    font-weight: 400;
+    margin: 0 auto;
+    opacity: .8;
+}
+.CourseDetail_purchaseBadge ul {
+    display: inline-block;
+    margin: 0;
+    padding: 24px 0 10px 4px;
+    text-align: left;
+}
+.CourseDetail_purchaseBadge ul li {
+    color: #494949;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    padding-left: 35px;
+    position: relative;
+}
+.CourseDetail_purchaseBadge .CourseDetail_learnNow {
+    font-size: 1.6rem;
+    margin-top: 16px;
+    min-width: 180px;
+    padding: 10px 16px;
+    
+}
+.CourseDetail_imgPreview .CourseDetail_icon {
+    color: #fff;
+    font-size: 6rem;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    transition: all .3s linear;
+    z-index: 1;
+}
+.CourseDetail_purchaseBadge ul li .CourseDetail_icon {
+    left: 0;
+    position: absolute;
+    top: 4px;
+}
