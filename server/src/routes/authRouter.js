@@ -11,4 +11,5 @@ authRouter.get('/',authController.getAll)
 
 
 
+
 module.exports =  authRouter

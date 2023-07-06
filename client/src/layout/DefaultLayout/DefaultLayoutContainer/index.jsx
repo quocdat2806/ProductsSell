@@ -11,7 +11,7 @@ const DefaultLayoutContainer = ({children,title,description}) => {
         <MarkdownParser description={description} className={cx('DefaultLayout_container-desc')}/>
 
     </div>
-    <div className='container-body'>
+    <div className='DefaultLayout_container-body'>
         {children}
 
     </div>

@@ -8,10 +8,13 @@ $progress: grayscale(73%);
   overflow: hidden;
   width: 100%;
   img {
-    -webkit-filter: $progress;
-    filter: $progress;
+    -webkit-filter: grayscale(73%);
+    filter:  grayscale(73%);
     height: 22px;
     object-fit: cover;
     width: 22px;
   }
+}
+.CourseStep_progress{
+  margin-right: 8px;
 }

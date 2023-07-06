@@ -14,24 +14,33 @@ const publicRouters = [
     },
     {
         path:'/learning-path',
-        component:LearningPath
+        component:LearningPath,
+        backHome:true
+
     },
      {
         path:'/blog',
-        component:Blog
+        component:Blog,
+        backHome:true
     }, 
     {
         path:'/learning/:slug',
         component:LessonDetail,
-        layout:null
+        layout:null,
+        backHome:true
+
     }, 
     {
         path:'/courses/:slug',
-        component:CourseDetail
+        component:CourseDetail,
+        backHome:true
+
     },
     {
         path:'/courses',
         component:Courses,
+        backHome:true
+
        
     },
 ]

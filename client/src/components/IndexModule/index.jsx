@@ -4,9 +4,9 @@ const cx = classNames.bind(styles);
 
 
 class IndexModule {
-    'index-module-grid'({children,styles}){
+    'index-module-grid'({children}){
         return (
-            <section style={styles} className={cx('index-module-gird')}>
+            <section  className={cx('index-module-gird','index-module-fullWidth')}>
 
                 {children}
             </section>
@@ -15,7 +15,9 @@ class IndexModule {
     }
     'index-module-row'({children,className}){
         return (
-            <section className={cx('index-module-row', `${className}`?`${className}`:null)}>
+            <section className={cx('index-module-row',{
+                [className]:Boolean(className)
+            } )}>
 
                {children}
             </section>

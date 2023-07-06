@@ -21,11 +21,13 @@ const CommonItem = ({
   isStudentCount,
   isPost,
   isVideo,
-  hide
 }) => {
+  
   return (
-    <div className={cx("CommonItem_wrapper", `${className}`)}>
-      <Link to={`/courses/${data.slug}`}Ư className={cx("CommonItem_link")}>
+    <div className={cx("CommonItem_wrapper",{
+      [className]: Boolean(className)
+    } )}>
+      <Link to={`/courses/${data.slug}`} className={cx("CommonItem_link")}>
         <Button
           title={"Xem khóa học"}
           className={cx("CommonItem_cta-btn__OK")}
@@ -50,12 +52,12 @@ const CommonItem = ({
       {isStudentCount && (
         <CourseItemStudentsCount
           studentsCount={data?.studentsCount}
-          className="svg-inline--fa fa-users"
+        
         />
       )}
-      {isPost && hide && (
+      {isPost  && (
         <PostItemAuthor
-          className={"userName_icon svg-inline--fa fa-circle-check"}
+          className={"userName_icon"}
           isWrapper
           isFallBackPro
           isUser
@@ -63,7 +65,7 @@ const CommonItem = ({
           data={data}
         />
       )}
-      {isVideo && hide && <VideoItem data={data} />}
+      {isVideo && <VideoItem data={data} />}
     </div>
   );
 };

@@ -3,13 +3,11 @@ import classNames from "classNames/bind";
 import styles from "./Header.module.scss";
 import Search from "../../../components/Search";
 import FallbackAvatar from "../../../components/FallbackAvatar";
-import { BellIcon } from "../../../Icons";
+import { BackIcon, BellIcon } from "../../../Icons";
 import { Logo, Avatar } from "../../../Images";
 import { Link } from "react-router-dom";
 const cx = classNames.bind(styles);
-
-
-const Header = () => {
+const Header = ({isBack}) => {
   return (
     <div className={cx('Header_wrapper')}>
       
@@ -17,7 +15,14 @@ const Header = () => {
         <Link>
           <Logo />
         </Link>
-        <h4 className={cx("Header_heading")}>Học Lập Trình Để Đi Làm</h4>
+        { isBack ?<Link className={cx('Header_backHome')}>
+          <h4 className={cx('Header_logoHeading')}>
+            <BackIcon/>
+            <span>Quay lại</span>
+          </h4>
+        </Link> 
+          : <h4 className={cx("Header_heading")}>Học Lập Trình Để Đi Làm</h4> }
+       
       </div>
       <div className={cx("Header_search", "d-flex-center")}>
         <div>
@@ -38,7 +43,7 @@ const Header = () => {
         <div>
           <div className={cx("Header_actionBtn")}>
             <BellIcon
-              className={cx("Header_action-icon", "svg-inline--fa", "fa-bell")}
+              className={cx("Header_action-icon")}
             />
           </div>
         </div>

@@ -27,11 +27,11 @@ class CourseItem {
     <span className={cx("CourseItem_main-price")}>{mainPrice}</span>
     )
   }
-  "CourseItem_students-count"({ studentsCount,className }) {
+  "CourseItem_students-count"({ studentsCount }) {
 
     return(
     <div className={cx("CourseItem_students-count")}>
-     <StudentsCountIcon className={className}/>
+     <StudentsCountIcon/>
       <span>{studentsCount}</span>
     </div>
     );

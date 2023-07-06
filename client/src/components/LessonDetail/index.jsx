@@ -1,6 +1,7 @@
 import Navbar from "../../layout/DefaultLayout/Navbar";
 import IndexModule from "../IndexModule";
-import TracksWrapper from "../TrackWrapper";
+import Tracks from "../Tracks";
+import TracksWrapper, { TrackOverlay } from "../Tracks";
 const ModuleGrid = IndexModule["index-module-grid"]
 
 function LessonDetail() {
@@ -9,7 +10,9 @@ function LessonDetail() {
             <Navbar>
 
             </Navbar>
-            <TracksWrapper/>
+            <Tracks/>
+            <TrackOverlay/>
+            {/* <ContentWrapper/> */}
         </ModuleGrid>
      );
 }

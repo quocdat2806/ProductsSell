@@ -8,7 +8,6 @@ const cx = classNames.bind(styles);
 
 const Sidebar = () => {
   return (
-    <div className={cx("Sidebar")}>
       <div className={cx("Sidebar_wrapper")}>
         <CreateButton />
         <ul className={cx("Sidebar_list")}>
@@ -25,7 +24,7 @@ const Sidebar = () => {
                   aria-current="page"
                   href={item.path}
                 >
-                  <Icon className={"svg-inline--fa"} />
+                  <Icon/>
                   <span>{item.title}</span>
                 </Link>
               </li>
@@ -36,7 +35,6 @@ const Sidebar = () => {
 
        
       </div>
-    </div>
   );
 };
 

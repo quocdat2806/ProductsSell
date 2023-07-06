@@ -1,5 +1,5 @@
 import { publicRouters } from "./routes"
-import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import {BrowserRouter,Routes,Route, Router} from 'react-router-dom'
 import { DefaultLayout } from "./layout";
 import { Fragment } from "react";
 
@@ -17,7 +17,7 @@ function App() {
               }else if(route.layout ===null){
                 Layout = Fragment
               }
-              return <Route key={index} path={route.path} element={<Layout><Page/></Layout>}  />
+              return <Route key={index} path={route.path} element={<Layout isBack={route.backHome}><Page/></Layout>}  />
             })}
          </Routes>
       </BrowserRouter>

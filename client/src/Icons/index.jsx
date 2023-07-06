@@ -1,6 +1,6 @@
 export const HomeIcon = ({ className }) => (
   <svg
-    className={className}
+    className={`svg-inline--fa  ${className}`}
     aria-hidden="true"
     focusable="false"
     data-prefix="fas"
@@ -21,7 +21,7 @@ export const AddIcon = ({ className }) => (
     focusable="false"
     data-prefix="fas"
     data-icon="plus"
-    className={className}
+    className={`svg-inline--fa  ${className}`}
     role="img"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 448 512"
@@ -34,7 +34,7 @@ export const AddIcon = ({ className }) => (
 );
 export const LearningPathIcon = ({ className }) => (
   <svg
-    className={className}
+   className={`svg-inline--fa  ${className}`}
     aria-hidden="true"
     focusable="false"
     data-prefix="fas"
@@ -51,7 +51,7 @@ export const LearningPathIcon = ({ className }) => (
 );
 export const CourseIcon = ({ className }) => (
   <svg
-    className={className}
+  className={`svg-inline--fa  ${className}`}
     aria-hidden="true"
     focusable="false"
     data-prefix="fas"
@@ -68,7 +68,7 @@ export const CourseIcon = ({ className }) => (
 );
 export const BlogIcon = ({ className }) => (
   <svg
-    className={className}
+  className={`svg-inline--fa  ${className}`}
     aria-hidden="true"
     focusable="false"
     data-prefix="fas"
@@ -102,7 +102,7 @@ export const BellIcon = ({ className }) => (
     role="img"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 448 512"
-    className={className}
+    className={`svg-inline--fa fa-bell ${className}`}
   >
     <path
       fill="currentColor"
@@ -119,7 +119,7 @@ export const AllIcon = ({ className }) => (
     role="img"
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 320 512"
-    className={className}
+    className={`svg-inline--fa  ${className}`}
   >
     <path
       fill="currentColor"
@@ -134,7 +134,7 @@ export const YoutubeIcon = ({ className }) => {
       focusable="false"
       data-prefix="fab"
       data-icon="youtube-square"
-      className={className}
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -153,7 +153,7 @@ export const FacebookIcon = ({ className }) => {
       focusable="false"
       data-prefix="fab"
       data-icon="facebook-square"
-      className={className}
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -172,7 +172,7 @@ export const TikTokIcon = ({ className }) => {
       focusable="false"
       data-prefix="fab"
       data-icon="tiktok"
-      className={className}
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -192,7 +192,7 @@ export const BookmarkIcon = ({ className }) => {
       focusable="false"
       data-prefix="far"
       data-icon="bookmark"
-      className={className}
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 384 512"
@@ -212,7 +212,7 @@ export const EllipseIcon = ({ className }) => {
       focusable="false"
       data-prefix="fas"
       data-icon="ellipsis"
-      className={className}
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 448 512"
@@ -232,7 +232,7 @@ export const StudentsCountIcon = ({ className }) => {
       focusable="false"
       data-prefix="fas"
       data-icon="users"
-      className={className}
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 640 512"
@@ -244,7 +244,7 @@ export const StudentsCountIcon = ({ className }) => {
     </svg>
   );
 };
-export const ViewsIcon = () => {
+export const ViewsIcon = ({className}) => {
   return (
     <svg
       aria-hidden="true"
@@ -252,7 +252,7 @@ export const ViewsIcon = () => {
       data-prefix="fas"
       data-icon="eye"
       role="img"
-      className="svg-inline--fa"
+      className={`svg-inline--fa  ${className}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 576 512"
     >
@@ -263,7 +263,7 @@ export const ViewsIcon = () => {
     </svg>
   );
 };
-export const LikesIcon = () => {
+export const LikesIcon = ({className}) => {
   return (
     <svg
       aria-hidden="true"
@@ -271,7 +271,7 @@ export const LikesIcon = () => {
       data-prefix="fas"
       data-icon="thumbs-up"
       role="img"
-      className="svg-inline--fa"
+      className={`svg-inline--fa  ${className}`}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
@@ -282,14 +282,14 @@ export const LikesIcon = () => {
     </svg>
   );
 };
-export const CommentsIcon = () => {
+export const CommentsIcon = ({className}) => {
   return (
     <svg
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
       data-icon="comment"
-      className="svg-inline--fa"
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
@@ -309,7 +309,7 @@ export const CheckIcon = ({ className }) => {
       focusable="false"
       data-prefix="fas"
       data-icon="circle-check"
-      className={className}
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
@@ -329,7 +329,7 @@ export const PlayIcon = ({ className }) => {
       focusable="false"
       data-prefix="fas"
       data-icon="circle-play"
-      className={className}
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
@@ -348,8 +348,7 @@ export const LevelIcon = ({ className }) => {
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
-      className ={className}
-
+      className={`svg-inline--fa  ${className}`}
       data-icon="gauge-high"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
@@ -368,8 +367,7 @@ export const TotalLessonIcon = ({ className }) => {
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
-      className ={className}
-
+      className={`svg-inline--fa  ${className}`}
       data-icon="film"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
@@ -388,8 +386,7 @@ export const TimeIcon = ({ className }) => {
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
-      className ={className}
-
+      className={`svg-inline--fa  ${className}`}
       data-icon="clock"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
@@ -408,7 +405,7 @@ export const SloganIcon = ({ className }) => {
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
-      className ={className}
+      className={`svg-inline--fa  ${className}`}
       data-icon="battery-full"
       role="img"
       xmlns="http://www.w3.org/2000/svg"
@@ -422,22 +419,21 @@ export const SloganIcon = ({ className }) => {
   );
 };
 
-
 export const NoteIcon = ({ className }) => {
   return (
     <svg
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
-      className ={className}
-      data-icon="battery-full"
+      data-icon="file"
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 576 512"
+      viewBox="0 0 384 512"
     >
       <path
         fill="currentColor"
-        d="M448 320H96V192H448V320zM0 176C0 131.8 35.82 96 80 96H464C508.2 96 544 131.8 544 176V192C561.7 192 576 206.3 576 224V288C576 305.7 561.7 320 544 320V336C544 380.2 508.2 416 464 416H80C35.82 416 0 380.2 0 336V176zM80 160C71.16 160 64 167.2 64 176V336C64 344.8 71.16 352 80 352H464C472.8 352 480 344.8 480 336V176C480 167.2 472.8 160 464 160H80z"
+        d="M256 0v128h128L256 0zM224 128L224 0H48C21.49 0 0 21.49 0 48v416C0 490.5 21.49 512 48 512h288c26.51 0 48-21.49 48-48V160h-127.1C238.3 160 224 145.7 224 128z"
       ></path>
     </svg>
   );
@@ -448,34 +444,75 @@ export const HelpIcon = ({ className }) => {
       aria-hidden="true"
       focusable="false"
       data-prefix="fas"
-      className ={className}
-      data-icon="battery-full"
+      data-icon="circle-question"
+      className={`svg-inline--fa  ${className}`}
       role="img"
       xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 576 512"
+      viewBox="0 0 512 512"
     >
       <path
         fill="currentColor"
-        d="M448 320H96V192H448V320zM0 176C0 131.8 35.82 96 80 96H464C508.2 96 544 131.8 544 176V192C561.7 192 576 206.3 576 224V288C576 305.7 561.7 320 544 320V336C544 380.2 508.2 416 464 416H80C35.82 416 0 380.2 0 336V176zM80 160C71.16 160 64 167.2 64 176V336C64 344.8 71.16 352 80 352H464C472.8 352 480 344.8 480 336V176C480 167.2 472.8 160 464 160H80z"
+        d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 400c-18 0-32-14-32-32s13.1-32 32-32c17.1 0 32 14 32 32S273.1 400 256 400zM325.1 258L280 286V288c0 13-11 24-24 24S232 301 232 288V272c0-8 4-16 12-21l57-34C308 213 312 206 312 198C312 186 301.1 176 289.1 176h-51.1C225.1 176 216 186 216 198c0 13-11 24-24 24s-24-11-24-24C168 159 199 128 237.1 128h51.1C329 128 360 159 360 198C360 222 347 245 325.1 258z"
       ></path>
     </svg>
   );
 };
-export const BackIcon = ({className})=>{
-  return(
+export const BackIcon = ({ className }) => {
+  return (
     <svg
-    aria-hidden="true"
-    focusable="false"
-    data-prefix="fas"
-    data-icon="chevron-left"
-    role="img"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 320 512"
-  >
-    <path
-      fill="currentColor"
-      d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z"
-    ></path>
-  </svg>
-  )
-}
+      aria-hidden="true"
+      focusable="false"
+      data-prefix="fas"
+      data-icon="chevron-left"
+      role="img"
+      className={`svg-inline--fa  ${className}`}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 320 512"
+    >
+      <path
+        fill="currentColor"
+        d="M224 480c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25l192-192c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25L77.25 256l169.4 169.4c12.5 12.5 12.5 32.75 0 45.25C240.4 476.9 232.2 480 224 480z"
+      ></path>
+    </svg>
+  );
+};
+
+export const CloseIcon = ({ className }) => {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      data-prefix="fas"
+      data-icon="xmark"
+      className={`svg-inline--fa  ${className}`}
+      role="img"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 320 512"
+    >
+      <path
+        fill="currentColor"
+        d="M310.6 361.4c12.5 12.5 12.5 32.75 0 45.25C304.4 412.9 296.2 416 288 416s-16.38-3.125-22.62-9.375L160 301.3L54.63 406.6C48.38 412.9 40.19 416 32 416S15.63 412.9 9.375 406.6c-12.5-12.5-12.5-32.75 0-45.25l105.4-105.4L9.375 150.6c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 210.8l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-105.4 105.4L310.6 361.4z"
+      ></path>
+    </svg>
+  );
+};
+export const DownIcon = () => {
+  return (
+    <svg
+      aria-hidden="true"
+      focusable="false"
+      data-prefix="fas"
+      data-icon="chevron-down"
+      className="svg-inline--fa fa-chevron-down "
+      role="img"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 448 512"
+    >
+      <path
+        fill="currentColor"
+        d="M224 416c-8.188 0-16.38-3.125-22.62-9.375l-192-192c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L224 338.8l169.4-169.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-192 192C240.4 412.9 232.2 416 224 416z"
+      ></path>
+    </svg>
+  );
+};
+

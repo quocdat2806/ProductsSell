@@ -1,0 +1,16 @@
+@supports (overflow:overlay){
+.Content_wrapper{
+    overflow-y: overlay;
+}
+}
+.Content_wrapper{
+    -ms-scroll-chaining: none;
+    bottom: 50px;
+    left: 0;
+    margin-top: 50px;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
+    position: fixed!important;
+    top: 0;
+    width: 77%;
+}

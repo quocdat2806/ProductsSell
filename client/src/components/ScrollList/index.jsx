@@ -60,7 +60,6 @@ const ScrollList = ({ className,hide }) => {
                            isVideo={data?.isVideo} 
                            isPro={data?.isPro}
                            data={item}
-                           hide={hide}
                            className={className} 
                         />
                       </ModuleCol>

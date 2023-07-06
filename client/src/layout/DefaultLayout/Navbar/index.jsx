@@ -13,6 +13,13 @@ export function NavbarWrapper({children}){
     )
 
 }
+export function NavbarPercent(){
+  return(
+    <div className={cx('Navbar_percent')}>
+       <span className={cx('Navbar_num')}>98</span>%
+    </div>
+  )
+}
 
 
 export function NavbarActions({children}){
@@ -40,23 +47,27 @@ function Navbar() {
               </div>
               <NavbarActions>
                 <div className={cx("Navbar_progress-bar")}>
-                  <CircularProgressBar/>  
+                  <CircularProgressBar courseStep={()=>{}} isRightSide isCicularProgressBar >
+                    <NavbarPercent/>
+                     
+                  </CircularProgressBar> 
                   <p className={cx("Navbar_complete-msg")}>
                     <strong>
-                      <span className={cx("Navbar_num")}>202</span>/
-                      <span className={cx("Navbar_num")}>206</span>
+                      <span className={cx("Navbar_num")}>202</span>
+                       / 
+                      <span className={cx("Navbar_num")}>206 </span>
                     </strong>
-                    bài học
+                     bài học
                   </p>
                 </div>
-                <div className={cx("Navbar-action-btn")}>
+                <button className={cx("Navbar_action-btn")}>
                  <NoteIcon className={cx('svg-inline--fa fa-file','Navbar_icon')}/>
                   <span className={cx("Navbar_label")}>Ghi chú</span>
-                </div>
-                <div className={cx("Navbar_action-btn", "Navbar_help-btn")}>
+                </button>
+                <button className={cx("Navbar_action-btn", "Navbar_help-btn")}>
                  <HelpIcon className={cx('svg-inline--fa fa-circle-question','Navbar_icon')}/>
                   <span className={cx("Navbar_label")}>Hướng dẫn</span>
-                </div>
+                </button>
               </NavbarActions>
            
       

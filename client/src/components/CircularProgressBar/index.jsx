@@ -1,23 +1,27 @@
 import classNames from "classNames/bind";
 import styles from "./CircularProgressBar.module.scss";
-import CourseStep from "../CourseStep";
 const cx = classNames.bind(styles);
 
-const CircularProgressBar = () => {
+// eslint-disable-next-line react/prop-types
+const CircularProgressBar = ({ children, isCicularProgressBar,isRightSide,courseStep }) => {
   return (
-    <div className={cx("CircularProgressBar_pie-wrapper")}>
-      <div className={cx("CircularProgressBar_pie")}>
+    <div  className={cx("CircularProgressBar_pie-wrapper",`${courseStep()}`)}>
+      <div className={cx("CircularProgressBar_pie",{
+        'CircularProgressBar_over-half':isCicularProgressBar
+      })}>
         <div
           className={cx(
             "CircularProgressBar_left-side CircularProgressBar_half-circle"
           )}
         ></div>
+       { isRightSide && <div
+          className={cx(
+            "CircularProgressBar_right-side CircularProgressBar_half-circle"
+          )}
+        ></div>}
       </div>
       <div className={cx("CircularProgressBar_shadow")}></div>
-      <div className={cx("CircularProgressBar_body")}>
-        <CourseStep />
-      </div>
-      
+      <div className={cx("CircularProgressBar_body")}>{children}</div>
     </div>
   );
 };

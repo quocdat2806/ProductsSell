@@ -2,7 +2,6 @@
 import DefaultLayoutContainer from '../../layout/DefaultLayout/DefaultLayoutContainer'
 import ScrollList from '../../components/ScrollList'
 import SuggestionBox from '../../components/SuggestionBox';
-
 const Courses = () => {
   return (
     <DefaultLayoutContainer title="Khóa hoc"

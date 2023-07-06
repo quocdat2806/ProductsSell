@@ -1,0 +1,94 @@
+.Navbar_wrapper {
+    --wrapper-height: 50px;
+    align-items: center;
+    background-color: #29303b;
+    display: flex;
+    height: var(--wrapper-height);
+    position: relative;
+    z-index: 1;
+}
+.Navbar_back-btn {
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    transition: background-color .2s linear;
+    width: 60px;
+}
+.Navbar_back-btn .Navbar_icon {
+    color: #fff;
+    font-size: 1.6rem;
+    margin: auto;
+}
+.Navbar_icon {
+    margin-right: 6px;
+}
+.Navbar_logo {
+    margin-left: 8px;
+    position: relative;
+    top: 1px;
+}
+.Navbar_logo img {
+    height: 30px;
+    border-radius: 8px;
+}
+
+.Navbar_course-title {
+    word-wrap: break-word;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    color: var(--white-color);
+    display: -webkit-box;
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-left: 16px;
+    overflow: hidden;
+}
+.Navbar_actions {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+}
+.Navbar_progress-bar{
+    align-items: center;
+    display: flex;
+    margin-right: 24px;
+}
+.Navbar_action-btn{
+    background-color: transparent;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-right: 24px;
+    opacity: .8;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.Navbar_complete-msg {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-left: 6px;
+    strong{
+        font-weight: 500;
+    }
+}
+.Navbar_completed-msg .Navbar_num {
+    font-size: 1.2rem;
+}
+.Navbar_num {
+    -webkit-font-feature-settings: "tnum";
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+}
+.Navbar_percent{
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+}
+// .Navbar_label{
+//     display: none;
+// }
+// .Navbar_help-btn{
+//     display:none
+// }
