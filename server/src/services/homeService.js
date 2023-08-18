@@ -3,9 +3,6 @@ const Posts = require('../models/Posts')
 const Videos = require('../models/Videos')
 
 
-
-
-
 class HomeService{
      getAll(){
         return new Promise(async (resolve, reject) => {

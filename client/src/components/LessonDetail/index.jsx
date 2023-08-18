@@ -1,4 +1,5 @@
 import Navbar from "../../layout/DefaultLayout/Navbar";
+import Content from "../Content";
 import IndexModule from "../IndexModule";
 import Tracks from "../Tracks";
 import TracksWrapper, { TrackOverlay } from "../Tracks";
@@ -12,7 +13,7 @@ function LessonDetail() {
             </Navbar>
             <Tracks/>
             <TrackOverlay/>
-            {/* <ContentWrapper/> */}
+            <Content/>
         </ModuleGrid>
      );
 }

@@ -4,6 +4,7 @@ import LearningPath from "../pages/LearningPath"
 import Courses from "../pages/Courses"
 import CourseDetail from "../components/CourseDetail"
 import LessonDetail from "../components/LessonDetail"
+import Login from "../pages/Login/login"
 
 
 const publicRouters = [
@@ -15,6 +16,12 @@ const publicRouters = [
     {
         path:'/learning-path',
         component:LearningPath,
+        backHome:true
+
+    },
+    {
+        path:'/login',
+        component:Login,
         backHome:true
 
     },
